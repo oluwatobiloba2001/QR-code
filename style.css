@@ -1,0 +1,60 @@
+/**
+* ! universal styling
+**/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(9, 176, 232);
+    padding: 5em 0;
+}
+
+/**
+* ! section styling begins here
+**/
+
+section.container{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+    max-width: 760px; 
+    margin-inline: auto;
+    padding: 4em;
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 15px;
+}
+
+.img{
+    max-width: 500px;
+}
+
+.img > img{
+    border-radius: 20px;
+    max-width: inherit;
+}
+
+.para{
+    max-width: 250px;
+    text-align: center;
+}
+
+/**
+* ! media query styling begins here
+ **/
+
+ @media(max-width: 425px){
+    .img{
+        max-width: 300px;
+    }
+ }
+
+.heading{
+    max-width: 300px;
+    text-align: center;
+}
